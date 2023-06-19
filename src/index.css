@@ -66,8 +66,8 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
@@ -260,14 +260,14 @@ Navbar
 */
 
 nav {
-  background: var(--primary-500);
+  background: var(--black);
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .nav-center {
-  width: var(--view-width);
+  width: 90vw;
   max-width: var(--fixed-width);
   display: flex;
   justify-content: space-between;
@@ -275,6 +275,10 @@ nav {
 }
 nav h4 {
   color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 .nav-container {
   display: block;
@@ -286,18 +290,18 @@ nav h4 {
 }
 .amount-container {
   position: absolute;
-  top: -0.85rem;
-  right: -0.85rem;
+  background: var(--primary-300);
   width: 1.75rem;
   height: 1.75rem;
-  background: var(--primary-300);
+  top: -0.85rem;
+  right: -0.85rem;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .total-amount {
   color: var(--white);
+  font-weight: 600;
   font-size: 1.25rem;
 }
 /*
@@ -314,19 +318,19 @@ Cart
   padding: 2.5rem 0;
 }
 .cart h2 {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 3rem;
 }
 .empty-cart {
-  text-transform: lowercase;
-  color: var(--grey-500);
-  margin-top: 1rem;
   text-align: center;
+  text-transform: lowercase;
+  color: var(--primary-500);
+  margin-top: 1rem;
 }
 hr {
-  background: var(--grey-300);
   border-color: transparent;
+  background: var(--primary-300);
   margin-bottom: 1rem;
   border-width: 1px;
 }
@@ -342,11 +346,12 @@ hr {
 }
 .cart-total span {
   background: var(--primary-500);
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--borderRadius);
   color: var(--white);
+  border-radius: var(--borderRadius);
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
 }
+
 /*
 =============== 
 Cart Item
@@ -361,10 +366,11 @@ Cart Item
 }
 
 .cart-item img {
-  width: 5rem;
   height: 5rem;
+  width: 5rem;
   object-fit: cover;
 }
+
 .cart-item h5 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -373,8 +379,8 @@ Cart Item
 }
 
 .item-price {
-  color: var(--grey-500);
   display: block;
+  color: var(--grey-500);
 }
 .remove-btn {
   color: var(--primary-500);
@@ -387,24 +393,12 @@ Cart Item
   transition: var(--transition);
 }
 .remove-btn:hover {
-  color: var(--primary-600);
 }
 .amount-btn {
-  width: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
 }
 .amount-icon {
-  font-size: 1.25rem;
-  color: var(--primary-500);
-  transition: var(--transition);
 }
 .amount-icon:hover {
-  color: var(--primary-700);
 }
 .amount {
-  font-size: 1.25rem;
-  display: block;
-  text-align: center;
 }
