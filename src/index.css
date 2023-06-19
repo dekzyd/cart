@@ -393,12 +393,27 @@ Cart Item
   transition: var(--transition);
 }
 .remove-btn:hover {
+  /* color: var(--primary-700); */
+  color: var(--red-dark);
 }
 .amount-btn {
+  width: 1.5rem;
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
 }
 .amount-icon {
+  size: 1.25rem;
+  color: var(--primary-500);
+  transition: var(--transition);
 }
 .amount-icon:hover {
+  color: var(--primary-700);
+  transform: scale(110%);
 }
 .amount {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
 }
